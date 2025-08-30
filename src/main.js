@@ -40,7 +40,7 @@ let clock = new THREE.Clock();
 
 // Load Duck model
 const loader = new GLTFLoader();
-loader.load('./public/Duck.glb', (gltf) => {
+loader.load('../public/Duck.glb', (gltf) => {
     duckModel = gltf.scene; // toal my model into the scene
     scene.add(duckModel);
     animate(); // start loop
