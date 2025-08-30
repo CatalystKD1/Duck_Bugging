@@ -1,0 +1,86 @@
+/* Body */
+body, html {
+    margin: 0;
+    height: 100%;
+    background-color: #e7ff6e;
+    font-family: Arial, sans-serif;
+}
+
+/* Header banner */
+.header {
+    background-color: #7d3cff; 
+    padding: 10px;
+    text-align: center;
+}
+.header .logo {
+    max-height: 60px;
+}
+
+/* Main 3-column layout */
+main {
+    display: grid;
+    /*Use grid to split into 3 columns*/
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left column */
+.explination {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #ffb;
+}
+
+/* Right column */
+.extra {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #ffb;
+}
+
+
+/* Middle column */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Canvas */
+.duck {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    background: #e7ff6e;
+}
+
+/* Audio Playback */
+.playback {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+/* Social links styling DIV */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Sizing of GitHub and LinkedIn */
+.social-icon {
+    width: auto;
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
